@@ -234,6 +234,14 @@ body #about section .container .content-txt p {
   font-weight: 400;
   color: rgb(75, 75, 75);
 }
+body #about section .container .content-txt p::-moz-selection {
+  background-color: #0D23C2;
+  color: #fff;
+}
+body #about section .container .content-txt p::selection {
+  background-color: #0D23C2;
+  color: #fff;
+}
 body #about section .container .cv a {
   padding: 15px 20px;
   font-size: 1rem;
@@ -1587,4 +1595,16 @@ body #contact section .email a {
 body #contact section .phone {
   margin: 0px 15px;
   color: #F0EFF5;
+}
+body .tracker {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  z-index: 9999;
+  pointer-events: none;
+  transition: ease-out 0.2s;
+}
+body .tracker svg {
+  width: 120%;
+  height: 120%;
 }/*# sourceMappingURL=style.css.map */

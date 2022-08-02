@@ -43,7 +43,7 @@ function contador(variavel, teste, num, numBar) {
             variavel.innerHTML = counter + "%";
         }
     }, numBar);
-};
+}
 
 function toggleHTML() {
     classListToggle(infoHTML);
@@ -87,3 +87,8 @@ function toggleXD() {
     bar('#progress-bar-xd', "animXD 1s linear forwards");
 }
 
+const tracker = document.querySelector(".tracker");
+document.body.addEventListener("mousemove", e => {
+    tracker.style.left = `${e.clientX}px`;
+    tracker.style.top = `${e.clientY}px`;
+});

@@ -263,6 +263,11 @@ body {
                         line-height: 25px;
                         #{$fWeight}: 400;
                         color: rgb(75, 75, 75);
+                        
+                        &::selection {
+                            background-color: $colorBlue;
+                            color: #fff;
+                        }
                     }
                 }    
 
@@ -1732,4 +1737,19 @@ body {
             }
         }
     }
+
+    .tracker {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        z-index: 9999;
+        pointer-events: none;
+        transition: ease-out .20s;
+
+        svg{
+            width: 120%;
+            height: 120%;
+        }
+    }
+        
 }
